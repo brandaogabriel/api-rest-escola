@@ -56,7 +56,7 @@ Os seguintes endpoints estão configurados:
 
 **Dados para usuários (JSON)**
 
-```
+```json
 {
 	"nome": "nome válido",
 	"password": "senha válida",

@@ -23,7 +23,7 @@ npm run dev
 
 Neste ponto sua API deverá está rodando no endereço http://localhost:3001/.
 
-As **configurações base** para conexão com **MySql/Mariadb** ja estão **definidas** em `src/config/database.js`
+As **configurações** da base de dados **MySql/Mariadb** ja estão **definidas** em `src/config/database.js`. Você precisa definir a conexão em `.env`, como já citado acima.
 
 As configurações começando com `process.env.` vem do arquivo `.env`.
 

@@ -12,7 +12,7 @@ import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
-  `react2.${process.env.APP_URL}`,
+  `${process.env.APP_URL}`,
   'http://localhost:3001',
 ];
 

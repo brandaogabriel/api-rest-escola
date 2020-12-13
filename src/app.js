@@ -36,6 +36,11 @@ class App {
   middlewares() {
     this.app.use(cors(corsOptions));
     this.app.use(helmet());
+    this.app.use((req, res, next) => {
+      res.header('Access-Control-Allow-Origin', '*');
+      res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-type, Accept');
+      next();
+    });
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
     this.app.use('/images/', express.static(resolve(__dirname, '..', 'uploads', 'images')));
